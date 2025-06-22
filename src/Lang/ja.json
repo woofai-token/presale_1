@@ -1,0 +1,13 @@
+{
+  "popup_heading": "📱 ウォレットブラウザで開く",
+  "popup_note": "モバイルユーザーの方は、以下の手順に従ってください：",
+  "step1_title": "ステップ1：",
+  "step1_desc": "Phantom または Solflare ウォレットをインストールしてください",
+  "install_phantom": "Phantom をインストール",
+  "install_solflare": "Solflare をインストール",
+  "step2_title": "ステップ2：",
+  "step2_desc": "Solflare または Phantom を開き、「Explore 🔍」セクションに移動します",
+  "step3_title": "ステップ3：",
+  "step3_desc": "以下のプレセールサイトリンクを貼り付けて開いてください",
+  "copy_button": "📋 コピー"
+}

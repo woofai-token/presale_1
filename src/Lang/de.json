@@ -1,0 +1,13 @@
+{
+  "popup_heading": "📱 Im Wallet-Browser öffnen",
+  "popup_note": "Für mobile Nutzer, bitte folgen Sie diesen Schritten:",
+  "step1_title": "Schritt 1:",
+  "step1_desc": "Installieren Sie die Phantom- oder Solflare-Wallet",
+  "install_phantom": "Phantom installieren",
+  "install_solflare": "Solflare installieren",
+  "step2_title": "Schritt 2:",
+  "step2_desc": "Öffnen Sie Phantom oder Solflare → gehen Sie zum Bereich \"Entdecken 🔍\"",
+  "step3_title": "Schritt 3:",
+  "step3_desc": "Fügen Sie den Presale-Link ein und öffnen Sie ihn",
+  "copy_button": "📋 Kopieren"
+}

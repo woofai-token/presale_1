@@ -1,0 +1,13 @@
+{
+  "popup_heading": "📱 Apri nel browser del wallet",
+  "popup_note": "Per gli utenti mobile, segui i passaggi seguenti:",
+  "step1_title": "Passaggio 1:",
+  "step1_desc": "Installa il wallet Phantom o Solflare",
+  "install_phantom": "Installa Phantom",
+  "install_solflare": "Installa Solflare",
+  "step2_title": "Passaggio 2:",
+  "step2_desc": "Apri l'app Phantom o Solflare e vai su \"Esplora 🔍\"",
+  "step3_title": "Passaggio 3:",
+  "step3_desc": "Incolla il link del sito presale ed aprilo",
+  "copy_button": "📋 Copia"
+}

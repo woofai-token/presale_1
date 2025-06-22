@@ -1,0 +1,13 @@
+{
+  "popup_heading": "📱 请在钱包浏览器中打开",
+  "popup_note": "手机用户请按照以下步骤操作：",
+  "step1_title": "步骤 1：",
+  "step1_desc": "安装 Solflare 或 Phantom 钱包",
+  "install_phantom": "安装 Phantom",
+  "install_solflare": "安装 Solflare",
+  "step2_title": "步骤 2：",
+  "step2_desc": "打开 Solflare 或 Phantom 钱包 → 点击“浏览”🔍",
+  "step3_title": "步骤 3：",
+  "step3_desc": "粘贴以下预售网站链接并打开",
+  "copy_button": "📋 复制"
+}

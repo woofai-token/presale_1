@@ -1,0 +1,13 @@
+{
+  "popup_heading": "📱 Abrir en el navegador de la billetera",
+  "popup_note": "Para usuarios de teléfonos móviles, siga los pasos a continuación:",
+  "step1_title": "Paso 1:",
+  "step1_desc": "Instale la billetera Solflare o Phantom",
+  "install_phantom": "Instalar Phantom",
+  "install_solflare": "Instalar Solflare",
+  "step2_title": "Paso 2:",
+  "step2_desc": "Abra la billetera Solflare o Phantom → toque Explorar 🔍",
+  "step3_title": "Paso 3:",
+  "step3_desc": "Pegue el siguiente enlace de preventa y ábralo",
+  "copy_button": "📋 Copiar"
+}

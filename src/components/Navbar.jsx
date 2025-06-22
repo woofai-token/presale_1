@@ -26,10 +26,10 @@ const styles = {
     borderBottom: "4px solid #00FFFF",
     fontFamily: "'Press Start 2P', cursive",
     position: "relative",
-    top:-20,
     zIndex: 1,
     margin:0,
     borderTop:0,
+
   },
   logo: {
     display: "flex",

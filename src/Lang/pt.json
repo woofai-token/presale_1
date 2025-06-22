@@ -1,0 +1,13 @@
+{
+  "popup_heading": "📱 Abrir no Navegador da Carteira",
+  "popup_note": "Para usuários de celular, siga os passos abaixo:",
+  "step1_title": "Passo 1:",
+  "step1_desc": "Instale a carteira Solflare ou Phantom",
+  "install_phantom": "Instalar Phantom",
+  "install_solflare": "Instalar Solflare",
+  "step2_title": "Passo 2:",
+  "step2_desc": "Abra Solflare ou Phantom → Vá para \"Explorar\" 🔍",
+  "step3_title": "Passo 3:",
+  "step3_desc": "Cole o link do site da pré-venda abaixo e abra",
+  "copy_button": "📋 Copiar"
+}

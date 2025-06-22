@@ -1,0 +1,13 @@
+{
+  "popup_heading": "📱 Ouvrir dans le navigateur du portefeuille",
+  "popup_note": "Pour les utilisateurs mobiles, veuillez suivre les étapes suivantes :",
+  "step1_title": "Étape 1 :",
+  "step1_desc": "Installer le portefeuille Solflare ou Phantom",
+  "install_phantom": "Installer Phantom",
+  "install_solflare": "Installer Solflare",
+  "step2_title": "Étape 2 :",
+  "step2_desc": "Ouvrir Solflare ou Phantom → Naviguer vers \"Explorer\" 🔍",
+  "step3_title": "Étape 3 :",
+  "step3_desc": "Coller le lien du site de prévente ci-dessous et l’ouvrir",
+  "copy_button": "📋 Copier"
+}
