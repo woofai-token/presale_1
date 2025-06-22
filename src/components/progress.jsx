@@ -3,7 +3,7 @@ import { doc, getDoc } from "firebase/firestore";
 import { db, auth } from "./firebase";
 import { onAuthStateChanged } from "firebase/auth";
 
-const TARGET = 4000000000;
+const TARGET = 400000000000;
 
 export default function SaleProgress() {
   const [sold, setSold] = useState("Loading");
