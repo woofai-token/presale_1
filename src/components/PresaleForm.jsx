@@ -4,7 +4,7 @@ import { PublicKey, Transaction, SystemProgram } from "@solana/web3.js";
 import { db } from "./firebase";
 import { collection, addDoc, doc, getDoc, setDoc } from "firebase/firestore";
 
-const BACKEND_URL = "https://woofaiserver.onrender.com";
+const BACKEND_URL = "https://server2-0-9pf7.onrender.com";
 const WFAI_PER_USDT = 1 / 0.0000001252;
 const RECEIVER_WALLET = new PublicKey("Cuzt7YRDoEq4Moi1Voj6ceQAdGbavTpqSk3WpfTEBtnM");
 

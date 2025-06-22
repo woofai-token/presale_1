@@ -12,7 +12,7 @@ retroFontLink.href = "https://fonts.googleapis.com/css2?family=Press+Start+2P&di
 retroFontLink.rel = "stylesheet";
 document.head.appendChild(retroFontLink);
 function handleLanguageChange(lang) {
-  fetch(`/src/Lang/${lang}.json`)
+  fetch(`/Lang/${lang}.json`)
     .then(res => res.json())
     .then(data => {
       document.querySelectorAll("[data-i18n]").forEach((el) => {
@@ -21,7 +21,6 @@ function handleLanguageChange(lang) {
       });
     });
 
-  // console.log(fetch(`/Lang/${lang}.json`))
 }
 
 function isMobile() {
