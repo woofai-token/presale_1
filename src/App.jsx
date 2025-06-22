@@ -5,7 +5,7 @@ import TokenomicsChart from "./components/TokenomicsChart";
 import Countdown from "./components/Countdown";
 import SaleProgress from "./components/progress";
 import Navbar from "./components/Navbar";
-// Load retro font
+
 const retroFontLink = document.createElement("link");
 retroFontLink.href = "https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap";
 retroFontLink.rel = "stylesheet";
@@ -15,38 +15,46 @@ function isMobile() {
   return /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 }
 
-function isWalletInstalled(name) {
-  const ua = navigator.userAgent.toLowerCase();
-  return ua.includes(name);
-}
-
 export default function App() {
-  useEffect(() => {
-    if (isMobile() && !isWalletInstalled("phantom") && !isWalletInstalled("solflare")) {
-      const dappUrl = encodeURIComponent(window.location.href);
-      // Auto-redirect to Phantom or Solflare if mobile
-      const redirectUrl = navigator.userAgent.includes("iPhone") || navigator.userAgent.includes("iPad")
-        ? `https://phantom.app/ul/browse/${dappUrl}`
-        : `https://solflare.com/i/#${dappUrl}`;
-      window.location.href = redirectUrl;
-    }
-  }, []);
+  const [showMobileOptions, setShowMobileOptions] = useState(false);
+
+  const dappUrl = encodeURIComponent("https://labubutoken.netlify.app"); // <-- Update to your live URL
+
+  const handlePhantomRedirect = () => {
+    window.location.href = `https://phantom.app/ul/browse/${dappUrl}`;
+  };
+
+  const handleSolflareRedirect = () => {
+    window.location.href = `https://solflare.com/i/#${dappUrl}`;
+  };
 
   return (
-
     <div style={styles.page}>
-       <Navbar />
+      <Navbar />
       <div style={styles.background}></div>
-      
+
       <div style={styles.container}>
-       
         <Countdown />
         <SaleProgress />
-        <WalletMultiButton style={styles.walletButton} />
+
+        <WalletMultiButton
+          style={styles.walletButton}
+          onClick={() => isMobile() && setShowMobileOptions(true)}
+        />
+
+        {showMobileOptions && (
+          <div style={{ marginTop: "1rem" }}>
+            <p style={styles.note}>Choose wallet app:</p>
+            <button onClick={handlePhantomRedirect} style={styles.mobileBtn}>Open in Phantom</button>
+            <button onClick={handleSolflareRedirect} style={styles.mobileBtn}>Open in Solflare</button>
+          </div>
+        )}
+
         <PresaleForm />
-        {/* <p style={styles.note}>🔒 Unsold tokens will be burned.</p> */}
+
         <footer style={styles.footer}>
-          © 2025 Labubu Club· <a href="mailto:labubu.coin@gmail.com" style={styles.link}>Contact Us</a>
+          © 2025 Labubu Club ·{" "}
+          <a href="mailto:labubu.coin@gmail.com" style={styles.link}>Contact Us</a>
         </footer>
       </div>
     </div>
@@ -60,7 +68,7 @@ const styles = {
     minHeight: "100vh",
     color: "#FF66CC",
     display: "flex",
-    flexDirection:"column",
+    flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
     padding: "1rem",
@@ -82,33 +90,31 @@ const styles = {
     border: "2px solid #00FFFF",
     borderRadius: "12px",
     padding: "2rem 1rem",
-    // boxShadow: "0 0 25px #FF66CC66",
-  },
-  logo: {
-    width: 100,
-    height: 100,
-    borderRadius: 12,
-    marginBottom: 20,
-    boxShadow: "0 0 10px #FF66CC",
-  },
-  heading: {
-    fontSize: "16px",
-    color: "#00FFFF",
-    marginBottom: 20,
   },
   walletButton: {
     marginTop: "1rem",
-    marginBottom: "1.5rem",
+    marginBottom: "1rem",
     backgroundColor: "#FF66CC",
     color: "#000",
     fontSize: "10px",
     borderRadius: "6px",
     padding: "10px",
   },
+  mobileBtn: {
+    margin: "5px",
+    padding: "10px",
+    fontSize: "10px",
+    borderRadius: "6px",
+    border: "none",
+    backgroundColor: "#00FFFF",
+    color: "#000",
+    cursor: "pointer",
+    fontFamily: "'Press Start 2P', monospace",
+  },
   note: {
     fontSize: "10px",
-    color: "#ffcccc",
-    marginTop: "2rem",
+    color: "#cccccc",
+    marginBottom: "0.5rem",
   },
   footer: {
     fontSize: "10px",
