@@ -120,7 +120,7 @@ export default function PresaleForm() {
       <div style={styles.line}>💰 1 $LABUBU = 0.0000001252 USDT</div>
       <input
         type="number"
-        placeholder="USDT amount (1 - 500)"
+        placeholder="USDT"
         value={usdtAmount}
         min="1"
         max="500"
@@ -131,7 +131,7 @@ export default function PresaleForm() {
       />
       <input
         type="text"
-        placeholder="LABUBU Tokens"
+        placeholder="LABUBU"
         value={wfaiAmount}
         disabled
         style={styles.input}
