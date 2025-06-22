@@ -5,7 +5,7 @@ export default function Navbar() {
     <nav style={styles.nav}>
       <div style={styles.logo}>
         <img
-          src="./logo.jpg"
+          src="https://raw.githubusercontent.com/woofai-token/Presalepage/main/logo.jpg"
           alt="Labubu Logo"
           style={styles.logoImg}
         />
