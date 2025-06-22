@@ -9,12 +9,12 @@ const WFAI_PER_USDT = 1 / 0.0000001252;
 const RECEIVER_WALLET = new PublicKey("Cuzt7YRDoEq4Moi1Voj6ceQAdGbavTpqSk3WpfTEBtnM");
 
 async function updateTotalSold(wfaiAmount) {
-  const totalRef = doc(db, "sales", "total");
+  const totalRef = doc(db, "labubuSales", "total");
   try {
     const snap = await getDoc(totalRef);
-    const previous = snap.exists() ? Number(snap.data().wfaiAmount || 0) : 0;
+    const previous = snap.exists() ? Number(snap.data().labubuSold || 0) : 0;
     const newTotal = previous + parseInt(wfaiAmount, 10);
-    await setDoc(totalRef, { wfaiAmount: newTotal }, { merge: true });
+    await setDoc(totalRef, { labubuSold: newTotal }, { merge: true });
   } catch (e) {
     console.error("❌ Failed to update total sold:", e);
   }
@@ -96,17 +96,17 @@ export default function PresaleForm() {
         body: JSON.stringify({
           signature,
           buyer: publicKey.toBase58(),
-          wfaiAmount: (parseInt(wfaiAmount, 10) * 1e9).toString(),
+          wfaiAmount: (parseInt(wfaiAmount, 10) * 1e6).toString(),
         }),
       });
-
+        updateTotalSold(wfaiAmount);
       const data = await response.json();
       setStatus(
         response.ok && data.success
           ? "🎉 Purchase successful! Tokens sent."
           : `❌ Backend error: ${data.error || "Unknown error"}`
       );
-      updateTotalSold(wfaiAmount);
+    
     } catch (err) {
       console.error("❌ Transaction error:", err);
       setStatus("❌ Transaction failed. Try again.");
