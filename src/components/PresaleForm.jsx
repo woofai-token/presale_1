@@ -117,7 +117,7 @@ export default function PresaleForm() {
 
   return (
     <form onSubmit={handleBuy} style={styles.form}>
-      <div style={styles.line}>💰 1 $LABUBU = 0.0000001252 USDT</div>
+      <div style={styles.line}>💰 1 $BABYLABUBU = 0.0000001252 USDT</div>
       <input
         type="number"
         placeholder="USDT"
@@ -131,7 +131,7 @@ export default function PresaleForm() {
       />
       <input
         type="text"
-        placeholder="LABUBU"
+        placeholder="BABYLABUBU"
         value={wfaiAmount}
         disabled
         style={styles.input}
