@@ -98,7 +98,7 @@ export default function App() {
         <WalletMultiButton style={styles.walletButton} />
         <PresaleForm />
         <footer style={styles.footer}>
-          © 2025 Labubu Club · <a href="mailto:labubu.coin@gmail.com" style={styles.link}>Contact Us</a>
+          © 2025 BabyLabubu Club · <a href="mailto:BabyLabubu.coin@gmail.com" style={styles.link}>Contact Us</a>
         </footer>
       </div>
     </div>
