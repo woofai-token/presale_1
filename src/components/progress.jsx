@@ -30,7 +30,7 @@ export default function SaleProgress() {
   return (
     <div style={styles.container}>
       <h3 style={styles.header}>
-        🔥 SOLD: {sold.toLocaleString()} LABUBU
+        🔥 SOLD: {sold.toLocaleString()} $BABYLABUBU
       </h3>
       <div style={styles.barBackground}>
         <div
