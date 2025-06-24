@@ -6,10 +6,10 @@ export default function Navbar() {
       <div style={styles.logo}>
         <img
           src="https://raw.githubusercontent.com/woofai-token/Presalepage/main/logo.jpg"
-          alt="Labubu Logo"
+          alt="BabyLabubu Logo"
           style={styles.logoImg}
         />
-        <span style={styles.logoText}>LABUBU Presale</span>
+        <span style={styles.logoText}>BabyLabubu Presale</span>
       </div>
     </nav>
   );
