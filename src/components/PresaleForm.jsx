@@ -5,7 +5,7 @@ import { db } from "./firebase";
 import { collection, addDoc, doc, getDoc, setDoc } from "firebase/firestore";
 
 const BACKEND_URL = "https://server2-0-9pf7.onrender.com";
-const WFAI_PER_USDT = 1 / 0.0000001252;
+const WFAI_PER_USDT = 1 / 0.0000001262;
 const RECEIVER_WALLET = new PublicKey("Cuzt7YRDoEq4Moi1Voj6ceQAdGbavTpqSk3WpfTEBtnM");
 
 async function updateTotalSold(wfaiAmount) {
@@ -117,7 +117,7 @@ export default function PresaleForm() {
 
   return (
     <form onSubmit={handleBuy} style={styles.form}>
-      <div style={styles.line}>💰 1 $BABYLABUBU = 0.0000001252 USDT</div>
+      <div style={styles.line}>💰 1 $BABYLABUBU = 0.0000001262 USDT</div>
       <input
         type="number"
         placeholder="USDT"
